@@ -45,3 +45,6 @@ notes.md
 # Fichiers temporaires
 *.tmp
 .cache/
+
+# Fichier pdf
+*.pdf
