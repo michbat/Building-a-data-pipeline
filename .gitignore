@@ -1,7 +1,47 @@
+# Fichiers de données binaires (outputs générés)
 *.parquet
 
+# Environnements virtuels Python
+.venv/
+venv/
+env/
+ENV/
 
-# Byre-compiled / optimized / DLL Files
+# Fichiers Python compilés / optimisés
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
+*.so
+
+# Fichiers de distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Fichiers d'environnement et secrets
+.env
+.env.local
+*.key
+*.pem
+
+# Fichiers de logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Notes personnelles
+notes.md
+
+# Fichiers temporaires
+*.tmp
+.cache/
