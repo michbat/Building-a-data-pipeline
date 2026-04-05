@@ -1,16 +1,23 @@
 services:
   postgres-db:
     image: postgres:latest
-    container_name: ${CONTAINER_NAME:-ny_taxi}
+    container_name: pgdatabase
     restart: always
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql
+    networks:
+      - pg-network
+
+networks:
+  pg-network:
+    name: pg-network
+    driver: bridge
 
 volumes:
   pgdata:
