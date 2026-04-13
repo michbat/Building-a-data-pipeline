@@ -39,12 +39,19 @@ Thumbs.db
 *.swo
 *~
 
-# Notes personnelles
-notes.md
-
 # Fichiers temporaires
 *.tmp
 .cache/
 
 # Fichier pdf
 *.pdf
+
+# Fichiers de configuration sensibles
+*.json
+*.tf
+*.txt
+
+# Dossiers à ignorer
+/Terraform
+/notes
+/Kestra
